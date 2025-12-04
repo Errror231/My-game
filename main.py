@@ -175,7 +175,7 @@ while True:
         BLUE_x = randint(0, 900)
 
     # Collision detection for player/missile
-    if player.colliderect(enemy) and collide2 and enemy_health<=50:
+    if player.colliderect(enemy) and collide2:
         stats["health"]-=10
         collide2=False
         timer_go = True
